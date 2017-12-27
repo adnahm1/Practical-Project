@@ -1,33 +1,27 @@
+el = document.getElementById("simple-ss");
+el.onclick = links;
 
-var myIndex = 0;
-carousel();
+function links() {
+  left = parseInt(getComputedStyle(el).getPropertyValue("background-position").split(" ", 1));
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
+  /* DEFINE POSITIONS FOR CLICK EVENTS */
+  if (left >= -400) {
 
-    setTimeout(carousel, 6000); // Change image every 2 seconds
+    // First until about half way scrolled over
+    alert("first");
+    //window.open("https://www.google.com");
 
-    setTimeout(carousel, 8000); // Change image every 2 seconds
+  } else if (left >= -4000) {
 
-var slideIndex = 0;
-carousel();
+    // Second when half way scrolled either side
+    alert("second");
+    //window.open("https://www.google.com");
 
-function carousel() {
-     var i;
-    var x = document.getElementsByClassName("mySlides");
-     for (i = 0; i < x.length; i++) {
-      x[i].style.display  = "none";
-    }
-    slideIndex++;
-     if (slideIndex > x.length) {slideIndex = 1}
-     x[slideIndex-1].style.display = "block";
-    setTimeout(carousel,  4000); // Change image every 4 seconds
+  } else if (left >= -4000) {
+
+    // Third when over half way into banner
+    alert("third");
+
+  }
 
 }
