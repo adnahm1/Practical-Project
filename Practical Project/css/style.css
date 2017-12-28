@@ -271,10 +271,9 @@ img {
     background-image: url("https://source.unsplash.com/OlZ1nWLEEgM/1600x900");
   }
 
-
   @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 
-  a.box {
+  a.boxes {
   	color: #fff;
   	background-color: black;
   	display: block;
@@ -318,7 +317,7 @@ img {
 
   }
 
-  a:hover p.1{
+  a:hover .p1{
   	height: 3em;
   	opacity: 1;
   	visibility: visible;
@@ -336,4 +335,23 @@ img {
 
   a:hover .link {
   	transition: all .2s ease;
+  }
+
+  .box {
+    margin-left: 50%;
+    margin-top: -654px;
+    position: static;
+    background: #2db34a;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 500px;
+    line-height: 500px;
+    text-align: center;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    width: 50%;
+  }
+  .box:hover {
+    background: #ff7b29;
   }
