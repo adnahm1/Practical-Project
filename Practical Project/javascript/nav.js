@@ -1,11 +1,8 @@
-$(window).scroll(function() {
-if ($(this).scrollTop() > 100){
-    $('header').addClass("sticky");
-  }
-  else{
-    $('header').removeClass("sticky");
-  }
-});
-$(".navmenubtn").click(function() {
-  $('#navmenu').toggleClass("show");
-});
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}

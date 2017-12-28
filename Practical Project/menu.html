@@ -7,21 +7,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
 
-  <nav>
+<script src="javascript/menu.js"></script>
 
+<section class="logo">
+  <img src="img/logo1.png">
+</section>
+<nav>
 <div class="topnav" id="myTopnav">
-  <a href="explore.html">Explore</a>
-  <a href="restaurants.html">Restaurants</a>
-  <a href="menu.html">Menu</a>
-    <a href="index.html" class="Home">Home</a>
-    <img src="img/logo1.png" alt="logo" class="image1">
-
+<a href="explore.html">Explore</a>
+ <a href="restaurants.html">Restaurants</a>
+ <a href="menu.html">Menu</a>
+  <a href="index.html" class="Home">Home</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+ </div>
 </div>
 </nav>
+<div class="slider-container">
+<div class="menu">
+  <label for="slide-dot-1"></label>
+  <label for="slide-dot-2"></label>
+  <label for="slide-dot-3"></label>
+</div>
 
-<img src="img/foodhygiene.jpg" alt="foodhygiene" >
+<input id="slide-dot-1" type="radio" name="slides" checked>
+  <div class="slide slide-1"></div>
 
+<input id="slide-dot-2" type="radio" name="slides">
+  <div class="slide slide-2"></div>
+
+<input id="slide-dot-3" type="radio" name="slides">
+  <div class="slide slide-3"></div>
+</div>
 
 <div class='square-box'>
     <div class='square-content'><div><span>Bon Appétit</span></div></div>
@@ -78,21 +94,18 @@
             <div class='square-content'><div><span>Burgers</span></div></div>
         </div>
 
-
-
-
                 <div class="plan plan1">
 
-                  <h2>1/2 Peri Peri Chicken</h2>
-                  <p>Peri Peri flame Grilled half chicken glazed in a sauce of your choice</p>
+                  <h2>Momo Champ</h2>
+                  <p>Succluent Lamb burger topped with Cheese, fried onions and Relish.</p>
 
                 </div>
 
                 <div class="plan plan1">
 
 
-                  <h2>Full Peri Peri Chicken</h2>
-                  <p>Peri Peri flame Grilled full chicken glazed in a sauce of your choice</p>
+                  <h2>Half Pounder</h2>
+                  <p>Succluent Double Lamb burger topped with Cheese, fried onions and Relish</p>
 
                   <p class="price"></p>
 
@@ -100,10 +113,8 @@
 
                 <div class="plan plan3">
 
-                  <h2>Peri Peri Wings (5)</h2>
-                  <p>Grilled wings cooked to perfection
-
-                  £4.60</p>
+                  <h2>Mushroom Swiss</h2>
+                  <p>Lamb Burger with Swiss Cheese, Mushrooms and Burger relish all served in a toasted brioche bun.</p>
 
 
                   <p class="price"></p>
@@ -113,15 +124,157 @@
 
                 <div class="plan plan4">
 
-                  <h2>Peri Peri Strips
-                  (4)</h2>
-                  <p>Off the bone grilled Peri Peri Strips</p>
+                  <h2>Mexican Delight</h2>
+                  <p>Fresh mixed burger with jalepenos, salsa, chilli sauce, lettuce and onions.</p>
+                  <p class="price"></p>
+
+                </div>
+                <div class="plan plan4">
+
+                  <h2>Hawaian</h2>
+                  <p>Lamb Burger with grilled pineapples cheese slice sauce and salad of your choice.</p>
+
+                  <p class="price"></p>
+
+                </div>
+                <div class="plan plan4">
+
+                  <h2>Fish Burger</h2>
+                  <p>Deep Fried fish burger topped with Tartar Sauce and Cheese</p>
+
+                  <p class="price"></p>
+
+                </div>
+                <div class="plan plan4">
+
+                  <h2>EggHead Burger</h2>
+                  <p>Grilled burger with friend onions, fried tomatoes, mustard sauce and topped with a fried egg.</p>
 
                   <p class="price"></p>
 
                 </div>
 
+                <div class='square-box'>
+                    <div class='square-content'><div><span>Steaks</span></div></div>
+                </div>
+                <div class="plan plan4">
 
+                  <h2>T Bone Steak</h2>
+                  <p>Fresh cut T Bone steak ready to serve with friend onions and a choice of chips or rice.</p>
+
+                  <p class="price"></p>
+
+                </div>
+                <div class="plan plan4">
+
+                  <h2>Rump Steak</h2>
+                  <p>Grilled Beef Rump steak served with a choice of chips or rice</p>
+
+                  <p class="price"></p>
+
+                </div>
+
+                <div class="plan plan4">
+
+                  <h2>Chicken Steak</h2>
+                  <p>2 breast fillets cooked to perfection on the grill served with chips or rice.</p>
+
+                  <p class="price"></p>
+
+                </div>
+                <div class='square-box'>
+                    <div class='square-content'><div><span>Wraps</span></div></div>
+                </div>
+
+                <div class="plan plan4">
+
+                  <h2>Chicken Shawarma</h2>
+                  <p>Fresh cut chicken Shawarman cooken on a rotisserie served in a wrap</p>
+
+                  <p class="price"></p>
+
+                </div>
+
+                <div class="plan plan4">
+
+                  <h2>Peri Peri Chicken</h2>
+                  <p>3 Peri peri strips served in a wrap with sauce and salad of your choice.</p>
+
+                  <p class="price"></p>
+
+                </div>
+                <div class="plan plan4">
+
+                  <h2>Beef Sizzler</h2>
+                  <p>Finely cut slices of beef fillet cooked with grilled salad served in a wrap.</p>
+
+                  <p class="price"></p>
+
+                </div>
+                <div class="plan plan4">
+
+                  <h2>Chicken Sizzler</h2>
+                  <p>Strips of chicken fillet cooked with grilled salad served inside of a wrap</p>
+
+                  <p class="price"></p>
+
+                </div>
+                <div class="plan plan4">
+
+                  <h2>Kofta</h2>
+                  <p>2 long seekh kebabs cooken within the tandoor</p>
+
+                  <p class="price"></p>
+
+                </div>
+                <div class="plan plan4">
+
+                  <h2>Veg Wrap</h2>
+                  <p>Vegi wrap served with sauce and salad of your choice.</p>
+
+                  <p class="price"></p>
+
+                </div>
+                <div class='square-box'>
+                    <div class='square-content'><div><span>Sizzler Kebabs</span></div></div>
+                </div>
+
+                <div class="plan plan4">
+
+                  <h2>Chicken Sizzler</h2>
+                  <p>Strips of chicken fillet cooked on the grill with tomatoes, onions, mushrooms and served with either chips or rice.</p>
+
+                  <p class="price"></p>
+
+                </div>
+
+                <div class="plan plan4">
+
+                  <h2>Beef Sizzler</h2>
+                  <p>Strips of beef fillet cooked on the grill with tomatoes, onions, mushrooms and served with either chips or rice.</p>
+
+                  <p class="price"></p>
+
+                </div>
+                <div class="plan plan4">
+
+                  <h2>Fish Sizzler</h2>
+                  <p>2 cut pieces of cod fish cooked on the grill with tomatoes, onions, mushrooms and served with either chips or rice.</p>
+
+                  <p class="price"></p>
+
+                </div>
+
+                <div class="plan plan4">
+
+                  <h2>Mix of (Beef and Chicken)</h2>
+                  <p>Any choice of 2 sizzlers mixed and served with either chips or rice.</p>
+
+                  <p class="price"></p>
+
+                </div>
+
+ <script src="javascript/nav.js"></script>
 
 
 </body>
