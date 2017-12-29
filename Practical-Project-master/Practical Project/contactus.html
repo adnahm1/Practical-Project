@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway"rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+  <body>
+    <section class="logo">
+      <img src="img/logo1.png">
+    </section>
+  <nav>
+  <div class="topnav" id="myTopnav">
+    <a href="contactus.html">Contact Us</a>
+     <a href="restaurants.html">Restaurants</a>
+     <a href="menu.html">Menu</a>
+      <a href="index.html" class="Home">Home</a>
+
+   </div>
+    </nav>
+    <div id="form-main">
+      <div id="form-div">
+        <form class="form" id="form1">
+
+          <p class="name">
+            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+          </p>
+
+          <p class="email">
+            <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+          </p>
+
+          <p class="text">
+            <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+          </p>
+
+
+          <div class="submit">
+            <input type="submit" value="SEND" id="button-blue"/>
+            <div class="ease"></div>
+          </div>
+        </form>
+</div>
+</div>
+        <div id="map"></div>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEE7jShehl0FV9h4vJQi7oe-r3hrv0EIU&callback=initMap"></script>
+      </div>
+  <main>
+
+  </main>
+
+   <script src="javascript/nav.js"></script>
+   <script src="javascript/slideshow.js"></script>
+   <script src="javascript/contactus.js"></script>
+
+
+    </body>
+
+   </html>
