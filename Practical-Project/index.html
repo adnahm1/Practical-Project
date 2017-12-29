@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <title> MonMos Grill </title>
+      <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+   </head>
+   <body>
+      <section class="logo">
+         <img src="img/logo1.png" alt = logo>
+      </section>
+      <!-- Navigation Bar at the top of the page -->
+      <nav>
+         <div class="topnav" id="myTopnav">
+            <a href="contactus.html">Contact Us</a>
+            <a href="sustainability.html">Sustainability</a>
+            <a href="menu.html">Menu</a>
+            <a href="index.html" class="Home">Home</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+         </div>
+      </nav>
+      <!-- slider container which is the slideshow across all the pages
+         and all the images are the same -->
+      <div class="slider-container">
+         <div class="menu">
+            <label for="slide-dot-1"></label>
+            <label for="slide-dot-2"></label>
+            <label for="slide-dot-3"></label>
+         </div>
+         <!-- Slideshow dots at the bottom of the slider to allow users to flick themselves
+            between slides and look at the content -->
+         <input id="slide-dot-1" type="radio" name="slides" checked>
+         <div class="slide slide-1">
+            <div class="hero">
+               <div class="hero_heading text-center">
+                  <h4>From Burgers, to Steaks, to Sizzlers, to Kebabs, We've got it All </h4>
+               </div>
+            </div>
+         </div>
+         <input id="slide-dot-2" type="radio" name="slides">
+         <div class="slide slide-2">
+            <div class="hero_heading text-center">
+               <h4>Restaurants located in Burton, Birmingham and Derby</h4>
+            </div>
+         </div>
+         <input id="slide-dot-3" type="radio" name="slides">
+         <div class="slide slide-3"></div>
+      </div>
+      <!-- Animation Box which moves the text up -->
+      <a class="boxes">
+         <div class="content">
+            <h3>
+               MonMos Grill Speciality
+            </h3>
+            <p class="description">
+               MonMos Grill serves only the finest of foods,, we serve a variety and speciality
+               of foods from in house baked pizzas to burgers freshly cooked and cut on site.
+            </p>
+         </div>
+      </a>
+      <!-- link which allows external links to be accessed through the website-->
+      <div class="box">
+         Click <a href="http://www.derbytelegraph.co.uk/news/derby-news/momos-grill-gets-perfect-hygiene-907797">here</a> to review the local newspaper article regarding MonMos Grill.
+      </div>
+      <!-- Javascript for the Google reviews widget, as JS was not working in the javascript file had to implement
+         the code within the HTML -->
+      <script>
+         var nr_placeid = 'ChIJue70bBvxeUgRYjqZQmQ1pN0';
+         var nr_width = 1280;
+         var nr_height = 500;
+         var nr_directreviewbox = 0;
+         var nr_buttonCol = "df4a32"; // Amend this value to change your review button colour (hex color values only rrggbb)
+         var nr_transparency = false; // Set this to true to have a transparent widget with no border
+      </script>
+      <script src='https://www.netrite.net/google-review-code/googlereviews_ssl.js'></script>
+      <main>
+      </main>
+      <!-- links to other javascript pages to allow the function to occur -->
+      <script src="javascript/nav.js"></script>
+      <script src="javascript/slideshow.js"></script>
+      <script src="javascript/index.js"></script>
+      <!--Simple footer-->
+      <footer>
+         @ Copyright MonMos Limited 2010-2017
+      </footer>
+   </body>
+</html>

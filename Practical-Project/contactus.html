@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <title> MonMos Grill </title>
+      <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+   </head>
+   <body>
+      <section class="logo">
+         <img src="img/logo1.png" alt = logo>
+      </section>
+      <nav>
+         <div class="topnav" id="myTopnav">
+            <a href="contactus.html">Contact Us</a>
+            <a href="sustainability.html">Sustainability</a>
+            <a href="menu.html">Menu</a>
+            <a href="index.html" class="Home">Home</a>
+         </div>
+      </nav>
+      <div id="form-main">
+         <div id="form-div">
+            <form class="form" id="form1">
+               <p class="name">
+                  <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+               </p>
+               <p class="email">
+                  <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+               </p>
+               <p class="text">
+                  <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+               </p>
+               <div class="submit">
+                  <input type="submit" value="SEND" id="button-blue"/>
+                  <div class="ease"></div>
+               </div>
+            </form>
+         </div>
+      </div>
+      <svg id="clock" version="1.1" width="100%" height="100%"
+         preserveAspectRatio="xMidYMid meet" viewBox="-50 -50 100 100">
+         <!-- HTML code for Clock face-->
+         <defs>
+            <g id="clockface">
+               <circle cx="0" cy="0" r="49" />
+               <g id="mark-minute">
+                  <line x1="0" y1="-44" x2="0" y2="-47" />
+               </g>
+               <g id="marks5">
+                  <use xlink:href="#mark-minute" transform="rotate(0)" />
+                  <use xlink:href="#mark-minute" transform="rotate(6)" />
+                  <use xlink:href="#mark-minute" transform="rotate(12)" />
+                  <use xlink:href="#mark-minute" transform="rotate(18)" />
+                  <use xlink:href="#mark-minute" transform="rotate(24)" />
+               </g>
+               <use xlink:href="#marks5" transform="rotate(30)" />
+               <use xlink:href="#marks5" transform="rotate(60)" />
+               <use xlink:href="#marks5" transform="rotate(90)" />
+               <use xlink:href="#marks5" transform="rotate(120)" />
+               <use xlink:href="#marks5" transform="rotate(150)" />
+               <use xlink:href="#marks5" transform="rotate(180)" />
+               <use xlink:href="#marks5" transform="rotate(210)" />
+               <use xlink:href="#marks5" transform="rotate(240)" />
+               <use xlink:href="#marks5" transform="rotate(270)" />
+               <use xlink:href="#marks5" transform="rotate(300)" />
+               <use xlink:href="#marks5" transform="rotate(330)" />
+            </g>
+            <g id="hand">
+               <line x1="0" y1="0" x2="0" y2="-40" />
+               <circle cx="0" cy="0" r="2" />
+            </g>
+         </defs>
+         <use xlink:href="#clockface" />
+         <g id="offset-hours">
+            <use id="hour-hand"   xlink:href="#hand" />
+         </g>
+         <g id="offset-minutes">
+            <use id="minute-hand" xlink:href="#hand" />
+         </g>
+         <g id="offset-seconds">
+            <use id="second-hand" xlink:href="#hand" />
+         </g>
+      </svg>
+      <div id="map"></div>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEE7jShehl0FV9h4vJQi7oe-r3hrv0EIU&callback=initMap"></script>
+      <script src="javascript/nav.js"></script>
+      <script src="javascript/slideshow.js"></script>
+      <script src="javascript/contactus.js"></script>
+   </body>
+</html>
+<footer>
+   @ Copyright MonMos Limited 2010-2017
+</footer>
