@@ -1,8 +1,9 @@
 "use strict";
 
 function initMap() {
-  let leicester = {lat: 52.914475, lng: -1.466294};
-  let dmu = {lat: 52.807285, lng: -1.642997};
+  let leicester = {lat: 52.922530, lng: -1.474619};
+  let dmu = {lat: 52.914452, lng: -1.466278};
+  let uol = {lat: 52.807316, lng: -1.643111};
   let mapDemo = document.getElementById("map");
 
   // this sets the default location for when the map is first loaded
