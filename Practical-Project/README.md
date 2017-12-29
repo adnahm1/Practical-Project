@@ -15,8 +15,8 @@ the validator.
 -Used the following to beautify and validate the HTML and CSS and Javascript
 
 <img src="img/screenshot5.png" alt = logo>
-<img src="img/screenshot6.png" alt = logo>
-<img src="img/screenshot7.png" alt = logo>
+<img src="img/Screenshot6.png" alt = logo>
+<img src="img/Screenshot7.png" alt = logo>
 
 - Ran the CSS through the beautifier and copied and pasted the code within.
 
